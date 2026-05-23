@@ -1,0 +1,28 @@
+.ezy-tax-textbox{
+    border: 2px;
+    border-color: gray;
+}
+.ezy-tax-logo{
+    width: 150px;
+    height: 150px;
+}
+.ezy-tax-form-label{
+    color: rgb(71, 70, 70);
+}
+.ezy-tax-word-link{
+    color: blueviolet;
+}
+.ezy-tax-heading-one{
+    color:black;
+}
+.ezy-tax-heading-two{
+    color:rgb(71, 70, 70);
+}
+.ezy-tax-button{
+    background-color: blueviolet;
+    color: white;
+}
+.ezy-tax-form-separator{
+    border: 2px;
+    border-color: gray;
+}
