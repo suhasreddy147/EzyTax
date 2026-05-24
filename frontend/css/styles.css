@@ -1,28 +1,104 @@
 .ezy-tax-textbox{
-    border: 2px;
-    border-color: gray;
+    margin-bottom: 20px;
+    margin-left: 97px;
+    padding: 2px;
+    height: 25px;
+    font-size: 16px;
+    color:rgb(71, 70, 70);
+    width: 300px;
+    border-radius: 8px;
+    border-color: rgb(71, 70, 70);
+}
+.ezy-tax-form-div, .ezy-tax-logo, .ezy-tax-button, .ezy-tax-form-separator, .ezy-tax-form-border{
+    margin-left: auto;
+    margin-right: auto;
+    display: block;
+}
+.ezy-tax-form-div{
+    width: 500px;
 }
 .ezy-tax-logo{
     width: 150px;
     height: 150px;
+    padding-top: 75px;
 }
-.ezy-tax-form-label{
+.ezy-tax-textbox-label{
     color: rgb(71, 70, 70);
+    display: block;
+    padding-bottom: 8px;
+    font-size: 16px;
+    margin-left: 97px;
+}
+.ezy-tax-checkbox-label{
+    color: rgb(71, 70, 70);
+    font-size: 16px;
+    margin-left: 2px;
 }
 .ezy-tax-word-link{
     color: blueviolet;
 }
 .ezy-tax-heading-one{
     color:black;
+    text-align: center;
+    font-size: 30px;
+}
+.ezy-tax-form-text{
+    margin-left: 60px;
+    color:rgb(71, 70, 70);
 }
 .ezy-tax-heading-two{
     color:rgb(71, 70, 70);
+    text-align: center;
+    font-size: 22px;
+}
+.ezy-tax-heading-two, .ezy-tax-heading-one, .ezy-tax-word-link, .ezy-tax-checkbox-label, .ezy-tax-textbox-label, .ezy-tax-textbox, .ezy-tax-button, .ezy-tax-footer-text, .ezy-tax-form-text{
+    font-family: sans-serif;
 }
 .ezy-tax-button{
     background-color: blueviolet;
     color: white;
+    border: 2px solid blueviolet;
+    border-radius: 8px;
+    width: 300px;
+    font-size: 20px;
+    font-weight: 600;
+    height: 40px;
 }
 .ezy-tax-form-separator{
-    border: 2px;
-    border-color: gray;
+    height: 2px;
+    background-color: lightgray;
+    width: 500px;
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+.ezy-tax-symbol{
+    width: 25px;
+    height: 25px;
+    padding-left: 5px;
+    padding-right: 5px;
+}
+.ezy-tax-footer-text{
+    padding-top: 4px;
+    text-decoration: none;
+    color: white;
+}
+.ezy-tax-footer{
+    position:  fixed;
+    bottom: 0;
+    width: 100%;
+    height: 6.7%;
+    background-color: blueviolet;
+    align-content: center;
+}
+.ezy-tax-checkbox{
+    accent-color: blueviolet;
+    margin-left: 97px;
+    width: 16px;
+    height: 16px;
+}
+.ezy-tax-form-border{
+    border: 2px solid blueviolet;
+    width: 600px;
+    border-radius: 50px;
+    margin-top: 80px;
 }
