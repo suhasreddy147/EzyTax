@@ -9,6 +9,7 @@
     border-radius: 8px;
     border-color: rgb(71, 70, 70);
 }
+
 .ezy-tax-form-div, .ezy-tax-logo, .ezy-tax-button, .ezy-tax-form-separator, .ezy-tax-form-border{
     margin-left: auto;
     margin-right: auto;
@@ -17,6 +18,27 @@
 .ezy-tax-form-div{
     width: 500px;
 }
+.ezy-tax-form-div:focus-within .ezy-tax-textbox{
+    margin-bottom: 20px;
+    margin-left: 97px;
+    padding: 2px;
+    height: 25px;
+    font-size: 16px;
+    color:rgb(71, 70, 70);
+    width: 300px;
+    border-radius: 8px;
+    border-color: blueviolet;
+    outline: none;
+}
+
+.ezy-tax-form-div:focus-within .ezy-tax-textbox-label{
+    color: blueviolet;
+    display: block;
+    padding-bottom: 8px;
+    font-size: 16px;
+    margin-left: 97px;
+}
+
 .ezy-tax-logo{
     width: 150px;
     height: 150px;
@@ -29,6 +51,7 @@
     font-size: 16px;
     margin-left: 97px;
 }
+
 .ezy-tax-checkbox-label{
     color: rgb(71, 70, 70);
     font-size: 16px;
@@ -100,4 +123,7 @@
     width: 600px;
     border-radius: 50px;
     margin-top: 80px;
+}
+[hidden] {
+    display: none !important;
 }
