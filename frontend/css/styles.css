@@ -73,7 +73,7 @@
     text-align: center;
     font-size: 22px;
 }
-.ezy-tax-heading-two, .ezy-tax-heading-one, .ezy-tax-word-link, .ezy-tax-checkbox-label, .ezy-tax-textbox-label, .ezy-tax-textbox, .ezy-tax-button, .ezy-tax-footer-text, .ezy-tax-form-text{
+.ezy-tax-list-radio-option, .ezy-tax-questionnaire li::marker, .ezy-tax-list-question, .ezy-tax-heading-two, .ezy-tax-heading-one, .ezy-tax-word-link, .ezy-tax-checkbox-label, .ezy-tax-textbox-label, .ezy-tax-textbox, .ezy-tax-button, .ezy-tax-footer-text, .ezy-tax-form-text{
     font-family: sans-serif;
 }
 .ezy-tax-button{
@@ -85,6 +85,15 @@
     font-size: 20px;
     font-weight: 600;
     height: 40px;
+}
+.ezy-tax-button-no-border{
+    color: blueviolet;
+    border: none;
+    width: 300px;
+    font-size: 20px;
+    font-weight: 600;
+    height: 40px;
+    background: none;
 }
 .ezy-tax-form-separator{
     height: 2px;
@@ -123,4 +132,24 @@
     width: 600px;
     border-radius: 50px;
     margin-top: 80px;
+}
+.ezy-tax-list-item{
+    border: 2px solid blueviolet;
+    width: 600px;
+    border-radius: 50px;
+    margin-top: 80px;
+}
+.ezy-tax-list-question, .ezy-tax-questionnaire li::marker{
+    color:blueviolet;
+    font-weight: bold;
+    font-size: 18px;
+}
+.ezy-tax-radio{
+    accent-color: blueviolet;
+    width: 16px;
+    height: 16px;
+}
+.ezy-tax-list-radio-option{
+    color:rgb(71, 70, 70);
+    font-size: 16px;
 }
