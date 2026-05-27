@@ -133,6 +133,267 @@
     border-radius: 50px;
     margin-top: 80px;
 }
+
+/* ===== BODY ===== */
+
+body{
+    margin: 0;
+    padding: 0;
+    background-color: #f8f8f8;
+    overflow-x: hidden;
+}
+
+/* ===== NAVBAR ===== */
+
+.navbar{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 10px 60px;
+    background-color: white;
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+    box-shadow: 0px 2px 10px rgba(0,0,0,0.08);
+}
+
+.navbar-login-link{
+    text-decoration: none;
+    color: blueviolet !important;
+    font-size: 20px;
+    font-weight: 700;
+    font-family: sans-serif;
+}
+
+.navbar-login-link:hover{
+    text-decoration: underline;
+}
+
+.nav-links{
+    display: flex;
+    list-style: none;
+    gap: 30px;
+}
+
+.nav-links li a{
+    text-decoration: none;
+    color: rgb(71, 70, 70);
+    font-family: sans-serif;
+    font-size: 18px;
+    font-weight: 600;
+}
+
+.nav-links li a:hover{
+    color: blueviolet;
+}
+
+.navbar-btn{
+    width: 140px;
+    height: 45px;
+    margin: 0;
+}
+
+/* ===== HERO SECTION ===== */
+
+.hero{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 80px 100px;
+    gap: 50px;
+}
+
+.hero-left{
+    width: 50%;
+}
+
+.hero-left h1{
+    text-align: left;
+    font-size: 55px;
+    margin-bottom: 20px;
+}
+
+.hero-left p{
+    font-size: 22px;
+    line-height: 35px;
+    margin-bottom: 30px;
+}
+
+.hero-buttons{
+    display: flex;
+    gap: 20px;
+}
+
+.secondary-btn{
+    background-color: white;
+    color: blueviolet;
+}
+
+.hero-image{
+    width: 500px;
+}
+
+/* ===== SERVICES ===== */
+
+.services{
+    padding: 50px 80px;
+}
+
+.service-container{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 30px;
+    margin-top: 50px;
+}
+
+.service-card{
+    padding: 30px;
+    background-color: white;
+    text-align: center;
+    transition: 0.3s;
+}
+
+.service-card:hover{
+    transform: translateY(-5px);
+    box-shadow: 0px 5px 20px rgba(0,0,0,0.1);
+}
+
+/* ===== EXPERT SECTION ===== */
+
+.ca-section{
+    padding: 50px 80px;
+}
+
+.ca-container{
+    display: flex;
+    justify-content: center;
+    gap: 40px;
+    flex-wrap: wrap;
+    margin-top: 50px;
+}
+
+.ca-card{
+    width: 320px;
+    padding: 30px;
+    background-color: white;
+    text-align: center;
+    transition: 0.3s;
+}
+
+.ca-card:hover{
+    transform: translateY(-5px);
+    box-shadow: 0px 5px 20px rgba(0,0,0,0.1);
+}
+
+.ca-card img{
+    width: 120px;
+    height: 120px;
+    object-fit: cover;
+    border-radius: 50%;
+    margin-bottom: 20px;
+    padding-top: 0;
+}
+
+.ca-card button{
+    margin-top: 15px;
+}
+
+/* ===== CTA ===== */
+
+.cta{
+    width: 70%;
+    padding: 50px;
+    background-color: white;
+    text-align: center;
+    margin-bottom: 120px;
+}
+
+.cta button{
+    margin-top: 20px;
+}
+
+/* ===== FOOTER FIX ===== */
+
+.ezy-tax-footer{
+    display: flex;
+    align-items: center;
+}
+
+/* ===== MOBILE RESPONSIVE ===== */
+
+@media(max-width: 768px){
+
+    .navbar{
+        flex-direction: column;
+        padding: 20px;
+    }
+
+    .nav-links{
+        flex-direction: column;
+        text-align: center;
+        gap: 15px;
+        padding-left: 0;
+    }
+
+    .hero{
+        flex-direction: column;
+        padding: 40px 20px;
+        text-align: center;
+    }
+
+    .hero-left{
+        width: 100%;
+    }
+
+    .hero-left h1{
+        text-align: center;
+        font-size: 40px;
+    }
+
+    .hero-buttons{
+        justify-content: center;
+        flex-wrap: wrap;
+    }
+
+    .hero-image{
+        width: 100%;
+        max-width: 350px;
+    }
+
+    .service-container{
+        grid-template-columns: 1fr;
+    }
+
+    .cta{
+        width: 85%;
+    }
+
+    .ezy-tax-footer{
+        height: auto;
+        padding: 10px 0;
+    }
+
+    .load-more-container{
+    display: flex;
+    justify-content: center;
+    margin-top: 40px;
+    }
+
+    .load-more{
+    text-decoration: none;
+    background-color: blueviolet;
+    color: white;
+    padding: 12px 28px;
+    border-radius: 8px;
+    font-size: 18px;
+    font-family: sans-serif;
+    font-weight: 600;
+    }
+
+    .load-more:hover{
+    background-color: rgb(118, 43, 188);
+    }
+    
 .ezy-tax-list-item{
     border: 2px solid blueviolet;
     width: 600px;
