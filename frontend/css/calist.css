@@ -1,0 +1,259 @@
+
+/* ===== BODY ===== */
+
+body{
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
+    background-color: #f5f5f5;
+}
+
+/* ===== COMMON ===== */
+
+.ezy-tax-heading-one{
+    font-size: 48px;
+    font-weight: bold;
+    color: black;
+}
+
+.ezy-tax-form-text{
+    font-size: 20px;
+    color: rgb(70,70,70);
+    line-height: 1.6;
+}
+
+/* ===== NAVBAR ===== */
+
+.navbar{
+    width: 85%;
+    margin: 20px auto;
+
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    padding: 18px 40px;
+
+    background-color: white;
+    border-radius: 18px;
+
+    box-shadow: 0px 2px 10px rgba(0,0,0,0.08);
+}
+
+.ezy-tax-logo{
+    width: 120px;
+}
+
+.nav-links{
+    display: flex;
+    align-items: center;
+    gap: 30px;
+
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+.nav-links a{
+    text-decoration: none;
+    color: rgb(70,70,70);
+    font-size: 18px;
+    font-weight: 600;
+    transition: 0.3s;
+}
+
+.nav-links a:hover{
+    color: blueviolet;
+}
+
+.navbar-login-link{
+    color: blueviolet !important;
+}
+
+/* ===== HERO ===== */
+
+.ca-list-hero{
+    width: 85%;
+    margin: 60px auto;
+    text-align: center;
+}
+
+/* ===== SEARCH ===== */
+
+.filter-section{
+    width: 85%;
+    margin: auto;
+}
+
+.search-container{
+    display: flex;
+    gap: 15px;
+    margin-bottom: 30px;
+}
+
+.search-box{
+    flex: 1;
+
+    padding: 16px;
+
+    border: none;
+    border-radius: 12px;
+
+    background-color: white;
+
+    font-size: 18px;
+
+    box-shadow: 0px 2px 10px rgba(0,0,0,0.08);
+}
+
+.search-box:focus{
+    outline: 2px solid blueviolet;
+}
+
+.search-btn{
+    background-color: blueviolet;
+    color: white;
+
+    border: none;
+    border-radius: 12px;
+
+    padding: 0px 30px;
+
+    font-size: 18px;
+    font-weight: bold;
+
+    cursor: pointer;
+}
+
+/* ===== FILTER BUTTONS ===== */
+
+.filter-buttons{
+    display: flex;
+    gap: 15px;
+    flex-wrap: wrap;
+
+    margin-bottom: 40px;
+}
+
+.filter-btn{
+    background-color: white;
+    color: rgb(70,70,70);
+
+    border: none;
+    border-radius: 30px;
+
+    padding: 12px 24px;
+
+    font-size: 16px;
+    font-weight: 600;
+
+    cursor: pointer;
+
+    box-shadow: 0px 2px 10px rgba(0,0,0,0.08);
+}
+
+.active-btn{
+    background-color: blueviolet;
+    color: white;
+}
+
+/* ===== CA LIST ===== */
+
+.ca-list-container{
+    width: 85%;
+    margin: auto;
+
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+
+    gap: 30px;
+
+    margin-bottom: 80px;
+}
+
+.ca-list-card{
+    background-color: white;
+
+    border-radius: 18px;
+
+    padding: 25px;
+
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+    box-shadow: 0px 2px 10px rgba(0,0,0,0.08);
+
+    transition: 0.3s;
+}
+
+.ca-list-card:hover{
+    transform: translateY(-5px);
+}
+
+.ca-list-card img{
+    width: 100px;
+    height: 100px;
+
+    border-radius: 50%;
+
+    object-fit: cover;
+}
+
+.ca-list-content{
+    flex: 1;
+    padding-left: 25px;
+}
+
+.ca-list-content h2{
+    margin-bottom: 10px;
+}
+
+.ca-list-content p{
+    margin: 8px 0;
+    color: rgb(70,70,70);
+}
+
+.ca-rating{
+    margin-top: 10px;
+    font-weight: 600;
+}
+
+.ca-rate{
+    color: blueviolet;
+    margin-top: 12px;
+}
+
+.chat-btn{
+    background-color: blueviolet;
+    color: white;
+
+    border: none;
+    border-radius: 10px;
+
+    padding: 14px 22px;
+
+    font-size: 16px;
+    font-weight: bold;
+
+    cursor: pointer;
+}
+
+/* ===== FOOTER ===== */
+
+.ezy-tax-footer{
+    background-color: blueviolet;
+    padding: 20px 0;
+}
+
+.ezy-tax-footer-text{
+    color: white;
+    text-decoration: none;
+    font-size: 16px;
+}
+
+.ezy-tax-symbol{
+    width: 20px;
+    height: 20px;
+    margin-right: 8px;
+}
