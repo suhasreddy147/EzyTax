@@ -1,0 +1,238 @@
+/* ===== BODY ===== */
+
+body{
+    margin: 0;
+    padding: 0;
+    background-color: #f5f5f5;
+    font-family: Arial, sans-serif;
+    overflow-x: hidden;
+}
+
+/* ===== NAVBAR ===== */
+
+.navbar{
+    width: 85%;
+    margin: 20px auto;
+
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    padding: 18px 40px;
+
+    background-color: white;
+    border-radius: 18px;
+
+    box-shadow: 0px 2px 10px rgba(0,0,0,0.08);
+}
+
+.ezy-tax-logo{
+    width: 120px;
+}
+
+.nav-links{
+    display: flex;
+    align-items: center;
+    gap: 30px;
+
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+.nav-links a{
+    text-decoration: none;
+    color: rgb(70,70,70);
+    font-size: 18px;
+    font-weight: 600;
+    transition: 0.3s;
+}
+
+.nav-links a:hover{
+    color: blueviolet;
+}
+
+.navbar-login-link{
+    color: blueviolet !important;
+}
+
+/* ===== HERO SECTION ===== */
+
+.tax-regime-hero{
+    width: 85%;
+    margin: 70px auto;
+
+    text-align: center;
+}
+
+.tax-regime-hero h1{
+    font-size: 56px;
+    margin-bottom: 25px;
+
+    color: black;
+
+    line-height: 1.3;
+}
+
+.tax-regime-hero p{
+    font-size: 21px;
+    color: gray;
+
+    line-height: 1.8;
+}
+
+/* ===== TAX REGIME CONTAINER ===== */
+
+.tax-regime-container{
+    width: 85%;
+    margin: 70px auto;
+
+    display: flex;
+    gap: 35px;
+}
+
+/* ===== TAX REGIME CARD ===== */
+
+.tax-regime-card{
+    flex: 1;
+
+    background: linear-gradient(to bottom right, white, #f4ebff);
+
+    padding: 45px;
+
+    border-radius: 22px;
+
+    border-top: 6px solid blueviolet;
+
+    box-shadow: 0px 4px 15px rgba(0,0,0,0.08);
+
+    transition: 0.3s;
+}
+
+.tax-regime-card:hover{
+    transform: translateY(-6px);
+}
+
+.tax-regime-card h2{
+    font-size: 38px;
+    margin-bottom: 15px;
+
+    color: blueviolet;
+}
+
+.tax-description{
+    font-size: 18px;
+    color: gray;
+
+    margin-bottom: 30px;
+
+    line-height: 1.7;
+}
+
+/* ===== TAX FEATURE ===== */
+
+.tax-feature{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    padding: 16px 0;
+
+    border-bottom: 1px solid #ddd;
+
+    font-size: 18px;
+}
+
+.tax-feature strong{
+    color: blueviolet;
+}
+
+/* ===== TAX POINTS ===== */
+
+.tax-points{
+    margin-top: 30px;
+
+    padding-left: 22px;
+
+    line-height: 2;
+
+    font-size: 17px;
+
+    color: rgb(70,70,70);
+}
+
+.tax-points li{
+    margin-bottom: 8px;
+}
+
+/* ===== CTA SECTION ===== */
+
+.cta{
+    width: 85%;
+    margin: 90px auto;
+
+    background-color: white;
+
+    padding: 80px 30px;
+
+    text-align: center;
+
+    border-radius: 22px;
+
+    box-shadow: 0px 4px 15px rgba(0,0,0,0.08);
+}
+
+.cta h2{
+    font-size: 56px;
+    margin-bottom: 20px;
+
+    color: black;
+}
+
+.cta p{
+    font-size: 22px;
+    color: rgb(70,70,70);
+
+    margin-bottom: 35px;
+}
+
+.ezy-tax-button{
+    background: linear-gradient(to right, blueviolet, #8b5cf6);
+
+    color: white;
+
+    border: none;
+    border-radius: 12px;
+
+    padding: 16px 34px;
+
+    font-size: 18px;
+    font-weight: bold;
+
+    cursor: pointer;
+
+    transition: 0.3s;
+}
+
+.ezy-tax-button:hover{
+    transform: translateY(-3px);
+}
+
+/* ===== FOOTER ===== */
+
+.ezy-tax-footer{
+    background-color: blueviolet;
+    padding: 20px 0;
+}
+
+.ezy-tax-footer-text{
+    color: white;
+    text-decoration: none;
+    font-size: 16px;
+}
+
+.ezy-tax-symbol{
+    width: 20px;
+    height: 20px;
+    margin-right: 8px;
+}

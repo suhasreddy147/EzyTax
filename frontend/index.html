@@ -1,12 +1,13 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
     <title>EzyTax</title>
 
-    <link rel="stylesheet" href="css/styles.css">
+    <link rel="stylesheet" href="css/index.css">
 </head>
 
 <body>
@@ -15,27 +16,27 @@
 
     <header class="navbar">
 
-        <img src="assets/images/logo.png"
-             alt="EzyTax Logo"
-             class="ezy-tax-logo">
+        <img src="assets/images/logo.png" alt="EzyTax Logo" class="ezy-tax-logo">
 
         <nav>
             <ul class="nav-links">
 
                 <li><a href="#">Home</a></li>
+                <li><a href="caList.html">Consult Experts</a></li>
+                <li><a href="#">Tax Filing</a></li>
                 <li><a href="consult_experts.html">Consult Experts</a></li>
                 <li><a href="user-questionnaire.html">Tax Filing</a></li>
                 <li><a href="gstServices.html">GST Services</a></li>
                 <li><a href="user-profile.html">Profile</a></li>
                 <li>
                     <a href="login.html" class="navbar-login-link">
-                    Login/signup
+                        Login/signup
                     </a>
                 </li>
             </ul>
         </nav>
 
-        
+
 
     </header>
 
@@ -73,9 +74,7 @@
         <!-- Right Side pic j-->
         <div class="hero-right">
 
-            <img src="assets/images/hero-tax.png"
-                 alt="Tax Consultation"
-                 class="hero-image">
+            <img src="assets/images/hero-tax.png" alt="Tax Consultation" class="hero-image">
 
         </div>
 
@@ -158,51 +157,67 @@
         <div class="ca-container">
 
             <!-- Expert Card 1 -->
-            <div class="ca-card ezy-tax-form-border">
-                <img src="assets/images/ca-male.png"
-                     alt="Dummy Expert 1"
-                     class="ezy-tax-logo">
+            <div class="ca-card">
+                <img src="assets/images/ca-male.png" alt="Dummy Expert 1" class="ezy-tax-logo">
                 <h3 class="ezy-tax-heading-two">
                     Dummy CA 1
                 </h3>
-                <p class="ezy-tax-form-text">
-                    GST Specialist
+                <p class="ca-specialization">
+                    GST • Tax • Business Filing
                 </p>
-                <a href="signup.html">
-                    <button class="ezy-tax-button">
-                    Talk Now
-                    </button>
-                </a>
+                <div class="ca-card-details">
+                    <p>⭐ 4.9 Rating</p>
+                    <p>12+ Years Experience</p>
+                    <p>English • Hindi</p>
+                </div>
+                <div class="ca-card-footer">
+                    <h3 class="ca-price">
+                        ₹25/min
+                    </h3>
+                    <a href="signup.html">
+                        <button class="talk-btn">
+                            Consult Now
+                        </button>
+                    </a>
+                </div>
             </div>
 
-            <!-- Expert Card 2 -->
-            <div class="ca-card ezy-tax-form-border">
-                <img src="assets/images/ca-female.png"
-                     alt="Dummy Expert 2"
-                     class="ezy-tax-logo">
+
+            <!-- Expert Card 1 -->
+            <div class="ca-card">
+                <img src="assets/images/ca-male.png" alt="Dummy Expert 1" class="ezy-tax-logo">
                 <h3 class="ezy-tax-heading-two">
                     Dummy CA 2
                 </h3>
-                <p class="ezy-tax-form-text">
-                    Income Tax Expert
+                <p class="ca-specialization">
+                    GST • Business Filing
                 </p>
-                <a href="signup.html">
-                    <button class="ezy-tax-button">
-                    Talk Now
-                    </button>
-                </a>
+                <div class="ca-card-details">
+                    <p>⭐ 4.8 Rating</p>
+                    <p>9+ Years Experience</p>
+                    <p>English • Hindi • Tamil </p>
+                </div>
+                <div class="ca-card-footer">
+                    <h3 class="ca-price">
+                        ₹35/min
+                    </h3>
+                    <a href="signup.html">
+                        <button class="talk-btn">
+                            Consult Now
+                        </button>
+                    </a>
+                </div>
             </div>
 
-            <!-- Expert Card 3 -->
-            <div class="ca-card ezy-tax-form-border">
-                <img src="assets/images/ca-male.png"
-                     alt="Dummy Expert 3"
-                     class="ezy-tax-logo">
+
+            <!-- Expert Card 1 -->
+            <div class="ca-card">
+                <img src="assets/images/ca-male.png" alt="Dummy Expert 1" class="ezy-tax-logo">
                 <h3 class="ezy-tax-heading-two">
                     Dummy CA 3
                 </h3>
-                <p class="ezy-tax-form-text">
-                    Business Consultant
+                <p class="ca-specialization">
+                    Professionl Tax • Business Tax
                 </p>
                 <a href="signup.html">
                     <button class="ezy-tax-button">
@@ -214,7 +229,10 @@
             <div>
                 <a href="consult_experts.html" class="load-more"> Load More </a>
             </div>
+        </div>
 
+        <div class="load-more-container">
+            <a href="caList.html" class="load-more"> Load More </a>
         </div>
 
     </section>
@@ -224,33 +242,42 @@
     <section class="cta ezy-tax-form-border">
 
         <h2 class="ezy-tax-heading-one">
-            Need Help With Taxes?
+            Don't Know Anything About Taxes?
         </h2>
 
         <p class="ezy-tax-form-text">
-            Connect with trusted tax experts in one click.
+            Know more about taxes
         </p>
 
-        <button class="ezy-tax-button">
-            Get Started
-        </button>
+
+        <a href="taxRegime.html">
+
+            <button class="ezy-tax-button">
+                Get info
+            </button>
+
+        </a>
+
+
 
     </section>
 
     <!-- ================= FOOTER ================= -->
 
-    <footer class = "ezy-tax-footer">
+    <footer class="ezy-tax-footer">
         <div style="display:flex; padding: 0px 50px 0px 50px;">
             <img class="ezy-tax-symbol" src="assets/images/copyright-white.png" alt="copyright">
-                <span class="ezy-tax-footer-text">2026 EzyTax Solutions Inc.</span>
-                    <div style="margin-left:auto; display:flex;">
-                        <img class="ezy-tax-symbol" src="assets/images/mail-icon-white.png" alt="mail">
-                        <a class="ezy-tax-footer-text" style="padding-right:10px;" href="mailto:support@ezytax.com">support@ezytax.com</a>
-                        <img class="ezy-tax-symbol" src="assets/images/telephone-white.png" alt="phone">
-                        <a class="ezy-tax-footer-text" href="tel:+919999999999">+91 9999999999</a>
-                    </div>
+            <span class="ezy-tax-footer-text">2026 EzyTax Solutions Inc.</span>
+            <div style="margin-left:auto; display:flex;">
+                <img class="ezy-tax-symbol" src="assets/images/mail-icon-white.png" alt="mail">
+                <a class="ezy-tax-footer-text" style="padding-right:10px;"
+                    href="mailto:support@ezytax.com">support@ezytax.com</a>
+                <img class="ezy-tax-symbol" src="assets/images/telephone-white.png" alt="phone">
+                <a class="ezy-tax-footer-text" href="tel:+919999999999">+91 9999999999</a>
+            </div>
         </div>
     </footer>
 
 </body>
+
 </html>
