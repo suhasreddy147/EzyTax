@@ -1,0 +1,196 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta name="author" content="Ezy Tax">
+        <link rel="stylesheet" href="css/styles.css">
+        <style>
+            .pencil-icon{
+                width: 31px;
+                height: 31px;
+                border-radius: 50%;
+                border: none;
+                background: none;
+                margin-top: 120px;
+                margin-left: 60px;
+                position: absolute;
+            }
+            .centered-container{
+                display: flex;
+                justify-content: center;
+            }
+            .non-centered-container{
+                display: flex;
+                justify-content: space-between;
+                margin-bottom: 20px;
+            }
+        </style>
+    </head>
+    <body>
+        <header class="navbar">
+
+        <img src="assets/images/logo.png"
+             alt="EzyTax Logo"
+             class="ezy-tax-logo">
+
+        <nav>
+            <ul class="nav-links">
+
+                <li><a href="index.html">Home</a></li>
+                <li><a href="consult_experts.html">Consult Experts</a></li>
+                <li><a href="#">Tax Filing</a></li>
+                <li><a href="gstServices.html">GST Services</a></li>
+                <li><a href="user-profile.html">Profile</a></li>
+                <li>
+                    <a href="login.html" class="navbar-login-link">
+                    Login/signup
+                    </a>
+                </li>
+            </ul>
+        </nav>
+
+        
+
+    </header >
+        <table style="width: 100%;margin-bottom: 100px;">
+            <tr style="width: 100%;">
+                <td>
+                    <div style="margin-left: 30px;">
+                        <div class="ezy-tax-form-border">
+                            <div class="centered-container">
+                                <img src="assets/images/user.png" style="width: 160px;height: 160px; border-radius: 50%;">
+                                <button class="pencil-icon">
+                                    <img src="assets/images/pencil-icon.png" style="width: 30px;height: 30px;border-radius: 50%;">
+                                </button>
+                            </div>
+                            <div class="centered-container">
+                                <h1 class="ezy-tax-heading-one">FirstName LastName</h1>
+                            </div>
+                            <div class="ezy-tax-form-separator"></div>
+                            <div class="non-centered-container">
+                                <span class="ezy-tax-form-text" style="margin-left: 60px;">Account Type</span>
+                                <span class="ezy-tax-form-text" style="margin-right: 60px;color:black;font-weight: bold;">Customer</span>
+                            </div>
+                        </div>
+                        <div class="ezy-tax-form-border">
+                            <div>
+                                <h2 class="ezy-tax-heading-two" style="text-align: left;margin-left: 50px;">Quick Links</h2>
+                            </div>
+                            <div style="margin-left: 50px;margin-bottom: 20px;">
+                                <img src="assets/images/clock.png" style="width: 30px;height: 30px;">
+                                <span class="ezy-tax-form-text" style="margin-left: 10px; vertical-align: 10px;font-size: 18;">Recent Activity</span>
+                            </div>
+                            <div style="margin-left: 50px;margin-bottom: 20px;">
+                                <img src="assets/images/monitor.png" style="width: 30px;height: 30px;">
+                                <span class="ezy-tax-form-text" style="margin-left: 10px; vertical-align: 10px;font-size: 18;">Active Sessions</span>
+                            </div>
+                            <div style="margin-left: 50px;margin-bottom: 20px;">
+                                <img src="assets/images/questionnaire.png" style="width: 30px;height: 30px;">
+                                <a class="ezy-tax-form-text" href="user-questionnaire.html" style="margin-left: 10px; vertical-align: 10px;font-size: 18;text-decoration: none;">Questionnaire</a>
+                            </div>
+                        </div>
+                    </div>
+                </td>
+                <td style="width: 100%;">
+                    <div style="margin-right: 30px; display: flex; flex-direction: column; align-items: flex-end;width: 100%;">
+                        <div class="ezy-tax-form-border" style="width:1100px;">
+                            <div class="non-centered-container">
+                                <h1 class="ezy-tax-heading-one" style="text-align: left; margin-left:30px;">Personal Information</h1>
+                                <button class="ezy-tax-button-no-border" style="width: fit-content;margin-right: 100px; margin-top: 20px;">Edit</button>
+                            </div>
+                            <div class="non-centered-container">
+                                <div class="ezy-tax-form-div" style="margin-left: 0;margin-right: 0;">
+                                    <label class="ezy-tax-textbox-label" style="margin-left: 30px;" for="name">Name</label>
+                                    <input class="ezy-tax-textbox" style="margin-left: 30px;" type="text" id="name" placeholder="Enter your name" name="name">
+                                </div>
+                                <div class="ezy-tax-form-div" style="margin-left: 0;margin-right: 0;">
+                                    <label class="ezy-tax-textbox-label" for="email">Email</label>
+                                    <input class="ezy-tax-textbox" type="email" id="email" placeholder="Enter your email" name="email">
+                                </div>
+                            </div>
+                            <div class="non-centered-container">
+                                <div class="ezy-tax-form-div" style="margin-left: 0;margin-right: 0;">
+                                    <label class="ezy-tax-textbox-label" style="margin-left: 30px;" for="phone">Phone</label>
+                                    <input class="ezy-tax-textbox" style="margin-left: 30px;" type="text" id="phone" placeholder="Enter your phone number" name="phone">
+                                </div>
+                                <div class="ezy-tax-form-div" style="margin-left: 0;margin-right: 0;">
+                                    <label class="ezy-tax-textbox-label" for="pan">PAN</label>
+                                    <input class="ezy-tax-textbox" type="text" id="pan" placeholder="Enter your PAN number" name="pan">
+                                </div>
+                            </div>
+                            <div class="non-centered-container">
+                                <span></span>
+                                <div>
+                                    <button class="ezy-tax-button-no-border" style="width: fit-content;margin-right: 100px; margin-top: 0;color: red;">Cancel</button>
+                                    <button class="ezy-tax-button-no-border" style="width: fit-content;margin-right: 100px; margin-top: 0;">Update</button>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="ezy-tax-form-border" style="width:1100px;">
+                            <div class="non-centered-container">
+                                <h1 class="ezy-tax-heading-one" style="text-align: left; margin-left:30px;">Account Security</h1>
+                            </div>
+                            <div class="non-centered-container">
+                                <img src="assets/images/lock.png" style="width: 30px;height: 30px;margin-left: 30px;">
+                                <div class="ezy-tax-form-div" style="margin-left: 0;margin-right: 0;">
+                                    <div>
+                                        <span class="ezy-tax-form-text" style="margin-left:5px;font-weight: bold;">Password</span>
+                                    </div>
+                                    <div>
+                                        <span class="ezy-tax-form-text" style="margin-left:5px;font-size: 14px;">Last Changed 45 days ago</span>
+                                    </div>
+                                </div>
+                                <div class="ezy-tax-form-div" style="margin-left: 0;margin-right: 0;margin-top: 10px;">
+                                    <a class="ezy-tax-word-link" href="reset-password.html" style="margin-left: 200px;text-decoration: none;font-weight: bold;">Update Password</a>
+                                </div>
+                            </div>
+                            <div class="non-centered-container">
+                                <img src="assets/images/security-shield.png" style="width: 30px;height: 30px;margin-left: 30px;">
+                                <div class="ezy-tax-form-div" style="margin-left: 0;margin-right: 0;">
+                                    <div>
+                                        <span class="ezy-tax-form-text" style="margin-left:5px;font-weight: bold;">Two-Factor Authentication</span>
+                                    </div>
+                                    <div>
+                                        <span class="ezy-tax-form-text" style="margin-left:5px;font-size: 14px;">Via SMS and Auhtenticator App</span>
+                                    </div>
+                                </div>
+                                <div class="ezy-tax-form-div" style="margin-left: 0;margin-right: 0;margin-top: 10px;">
+                                    <a class="ezy-tax-word-link" href="#" style="margin-left: 200px;text-decoration: none;font-weight: bold;">Enable</a>
+                                </div>
+                            </div>
+                            <div class="non-centered-container" style="margin-bottom: 30px;">
+                                <img src="assets/images/sign-out.png" style="width: 30px;height: 30px;margin-left: 30px;">
+                                <div class="ezy-tax-form-div" style="margin-left: 0;margin-right: 0;">
+                                    <div>
+                                        <span class="ezy-tax-form-text" style="margin-left:5px;font-weight: bold;">Sign Out of All Devices</span>
+                                    </div>
+                                    <div>
+                                        <span class="ezy-tax-form-text" style="margin-left:5px;font-size: 14px;">Security measure if device is lost</span>
+                                    </div>
+                                </div>
+                                <div class="ezy-tax-form-div" style="margin-left: 0;margin-right: 0;margin-top: 10px;">
+                                    <a class="ezy-tax-word-link" href="#" style="margin-left: 200px;text-decoration: none;font-weight: bold;">Sign Out</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </td>
+            </tr>
+        </table>
+    <!-- ================= FOOTER ================= -->
+
+    <footer class = "ezy-tax-footer">
+        <div style="display:flex; padding: 0px 50px 0px 50px;">
+            <img class="ezy-tax-symbol" src="assets/images/copyright-white.png" alt="copyright">
+                <span class="ezy-tax-footer-text">2026 EzyTax Solutions Inc.</span>
+                    <div style="margin-left:auto; display:flex;">
+                        <img class="ezy-tax-symbol" src="assets/images/mail-icon-white.png" alt="mail">
+                        <a class="ezy-tax-footer-text" style="padding-right:10px;" href="mailto:support@ezytax.com">support@ezytax.com</a>
+                        <img class="ezy-tax-symbol" src="assets/images/telephone-white.png" alt="phone">
+                        <a class="ezy-tax-footer-text" href="tel:+919999999999">+91 9999999999</a>
+                    </div>
+        </div>
+    </footer>
+    </body>
+</html>

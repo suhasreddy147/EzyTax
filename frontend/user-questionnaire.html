@@ -1,0 +1,244 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="author" content="Ezy Tax">
+    <link rel="stylesheet" href="css/styles.css">
+    <style>
+        .pencil-icon {
+            width: 31px;
+            height: 31px;
+            border-radius: 50%;
+            border: none;
+            background: none;
+            margin-top: 120px;
+            margin-left: 60px;
+            position: absolute;
+        }
+
+        .centered-container {
+            display: flex;
+            justify-content: center;
+        }
+
+        .non-centered-container {
+            display: flex;
+            justify-content: space-between;
+            margin-bottom: 20px;
+        }
+    </style>
+</head>
+<body>
+    <header class="navbar">
+
+        <img src="assets/images/logo.png"
+             alt="EzyTax Logo"
+             class="ezy-tax-logo">
+
+        <nav>
+            <ul class="nav-links">
+
+                <li><a href="index.html">Home</a></li>
+                <li><a href="consult_experts.html">Consult Experts</a></li>
+                <li><a href="#">Tax Filing</a></li>
+                <li><a href="gstServices.html">GST Services</a></li>
+                <li><a href="user-profile.html">Profile</a></li>
+                <li>
+                    <a href="login.html" class="navbar-login-link">
+                    Login/signup
+                    </a>
+                </li>
+            </ul>
+        </nav>
+
+        
+
+    </header>
+    <div style="margin-left: 30px;margin-bottom: 100px;">
+        <div class="ezy-tax-form-border" style="width: 90%;">
+            <div>
+                <h1 class="ezy-tax-heading-one" style="text-align: left;margin-left: 50px;">Questionnaire</h1>
+            </div>
+            <div>
+                <h2 class="ezy-tax-heading-two" style="text-align: left;margin-left: 50px;">Tell us about yourself</h2>
+            </div>
+            <ol class="ezy-tax-questionnaire" style="margin-bottom: 30px;">
+                <li style="margin-bottom: 20px;margin-left: 30px;">
+                    <div style="margin-bottom: 10px;">
+                        <label class="ezy-tax-list-question">What best describes you?</label>
+                    </div>
+                    <div style="margin-bottom: 5px;">
+                        <input class="ezy-tax-radio" type="radio" id="salaried" name="salaried">
+                        <label class="ezy-tax-list-radio-option" for="salaried">Salaried Employee</label>
+                    </div>
+                    <div style="margin-bottom: 5px;">
+                        <input class="ezy-tax-radio" type="radio" id="self-employed" name="self-employed">
+                        <label class="ezy-tax-list-radio-option" for="self-employed">Self-Employed / Freelancer</label>
+                    </div>
+                    <div style="margin-bottom: 5px;">
+                        <input class="ezy-tax-radio" type="radio" id="business-owner" name="business-owner">
+                        <label class="ezy-tax-list-radio-option" for="business-owner">Business Owner</label>
+                    </div>
+                    <div style="margin-bottom: 5px;">
+                        <input class="ezy-tax-radio" type="radio" id="retired-pensioner" name="retired-pensioner">
+                        <label class="ezy-tax-list-radio-option" for="retired-pensioner">Retired / Pensioner</label>
+                    </div>
+                </li>
+                <li style="margin-bottom: 20px;margin-left: 30px;">
+                    <div style="margin-bottom: 10px;">
+                        <label class="ezy-tax-list-question">What is your age group?</label>
+                    </div>
+                    <div style="margin-bottom: 5px;">
+                        <input class="ezy-tax-radio" type="radio" id="below-sixty" name="below-sixty">
+                        <label class="ezy-tax-list-radio-option" for="below-sixty">Below 60</label>
+                    </div>
+                    <div style="margin-bottom: 5px;">
+                        <input class="ezy-tax-radio" type="radio" id="sixty-eighty" name="sixty-eighty">
+                        <label class="ezy-tax-list-radio-option" for="sixty-eighty">60-79</label>
+                    </div>
+                    <div style="margin-bottom: 5px;">
+                        <input class="ezy-tax-radio" type="radio" id="eighty-plus" name="eighty-plus">
+                        <label class="ezy-tax-list-radio-option" for="eighty-plus">80+</label>
+                    </div>
+                </li>
+                <li style="margin-bottom: 20px;margin-left: 30px;">
+                    <div class="ezy-tax-form-div" style="margin-left: 0;margin-right: 0;">
+                        <label class="ezy-tax-list-question" for="annual-income">What is your approximate annual income?</label>
+                        <input class="ezy-tax-textbox" style="margin-left: 0;margin-top: 10px;margin-bottom: 0;" type="number" id="annual-income" name="annual-income" placeholder="Enter annual income in ₹">
+                    </div>
+                </li>
+                <li style="margin-bottom: 20px;margin-left: 30px;">
+                    <div style="margin-bottom: 10px;">
+                        <label class="ezy-tax-list-question">Do you have any other income sources?</label>
+                    </div>
+                    <div style="margin-bottom: 5px;">
+                        <input class="ezy-tax-radio" type="checkbox" id="bank-interest" name="bank-interest">
+                        <label class="ezy-tax-list-radio-option" for="bank-interest">Bank Interest</label>
+                    </div>
+                    <div style="margin-bottom: 5px;">
+                        <input class="ezy-tax-radio" type="checkbox" id="rental-income" name="rental-income">
+                        <label class="ezy-tax-list-radio-option" for="rental-income">Rental Income</label>
+                    </div>
+                    <div style="margin-bottom: 5px;">
+                        <input class="ezy-tax-radio" type="checkbox" id="capital-gains" name="capital-gains">
+                        <label class="ezy-tax-list-radio-option" for="capital-gains">Capital Gains</label>
+                    </div>
+                    <div style="margin-bottom: 5px;">
+                        <input class="ezy-tax-radio" type="checkbox" id="side-income" name="side-income">
+                        <label class="ezy-tax-list-radio-option" for="side-income">Freelance / Additional Income</label>
+                    </div>
+                    <div style="margin-bottom: 5px;">
+                        <input class="ezy-tax-radio" type="checkbox" id="foreign-income" name="foreign-income">
+                        <label class="ezy-tax-list-radio-option" for="foreign-income">Foreign Income</label>
+                    </div>
+                </li>
+                <li style="margin-bottom: 20px;margin-left: 30px;">
+                    <div style="margin-bottom: 10px;">
+                        <label class="ezy-tax-list-question">Do you have a home loan?</label>
+                    </div>
+                    <div style="margin-bottom: 5px;">
+                        <input class="ezy-tax-radio" type="radio" id="home-loan-yes" name="home-loan-yes">
+                        <label class="ezy-tax-list-radio-option" for="home-loan-yes">Yes</label>
+                    </div>
+                    <div style="margin-bottom: 5px;">
+                        <input class="ezy-tax-radio" type="radio" id="home-loan-no" name="home-loan-no">
+                        <label class="ezy-tax-list-radio-option" for="home-loan-no">No</label>
+                    </div>
+                </li>
+                <li style="margin-bottom: 20px;margin-left: 30px;">
+                    <div style="margin-bottom: 10px;">
+                        <label class="ezy-tax-list-question">Do you pay rent and receive HRA?</label>
+                    </div>
+                    <div style="margin-bottom: 5px;">
+                        <input class="ezy-tax-radio" type="radio" id="hra-yes" name="hra-yes">
+                        <label class="ezy-tax-list-radio-option" for="hra-yes">Yes</label>
+                    </div>
+                    <div style="margin-bottom: 5px;">
+                        <input class="ezy-tax-radio" type="radio" id="hra-no" name="hra-no">
+                        <label class="ezy-tax-list-radio-option" for="hra-no">No</label>
+                    </div>
+                </li>
+                <li style="margin-bottom: 20px;margin-left: 30px;">
+                    <div class="ezy-tax-form-div" style="margin-left: 0;margin-right: 0;">
+                        <label class="ezy-tax-list-question" for="annual-income">What is your total 80C investment amount?</label>
+                        <input class="ezy-tax-textbox" style="margin-left: 0;margin-top: 10px;margin-bottom: 0;" type="number" id="annual-income" name="annual-income" placeholder="Enter amount in ₹">
+                    </div>
+                </li>
+                <li style="margin-bottom: 20px;margin-left: 30px;">
+                    <div style="margin-bottom: 10px;">
+                        <label class="ezy-tax-list-question">Do you have health insurance?</label>
+                    </div>
+                    <div style="margin-bottom: 5px;">
+                        <input class="ezy-tax-radio" type="radio" id="hi-yes" name="hi-yes">
+                        <label class="ezy-tax-list-radio-option" for="hi-yes">Yes</label>
+                    </div>
+                    <div style="margin-bottom: 5px;">
+                        <input class="ezy-tax-radio" type="radio" id="hi-no" name="hi-no">
+                        <label class="ezy-tax-list-radio-option" for="hi-no">No</label>
+                    </div>
+                </li>
+                <li style="margin-bottom: 20px;margin-left: 30px;">
+                    <div style="margin-bottom: 10px;">
+                        <label class="ezy-tax-list-question">Did you contribute to NPS?</label>
+                    </div>
+                    <div style="margin-bottom: 5px;">
+                        <input class="ezy-tax-radio" type="radio" id="nps-yes" name="nps-yes">
+                        <label class="ezy-tax-list-radio-option" for="nps-yes">Yes</label>
+                    </div>
+                    <div style="margin-bottom: 5px;">
+                        <input class="ezy-tax-radio" type="radio" id="nps-no" name="nps-no">
+                        <label class="ezy-tax-list-radio-option" for="nps-no">No</label>
+                    </div>
+                </li>
+                <li style="margin-bottom: 20px;margin-left: 30px;">
+                    <div style="margin-bottom: 10px;">
+                        <label class="ezy-tax-list-question">Did you make any eligible donations?</label>
+                    </div>
+                    <div style="margin-bottom: 5px;">
+                        <input class="ezy-tax-radio" type="radio" id="don-yes" name="don-yes">
+                        <label class="ezy-tax-list-radio-option" for="don-yes">Yes</label>
+                    </div>
+                    <div style="margin-bottom: 5px;">
+                        <input class="ezy-tax-radio" type="radio" id="don-no" name="don-no">
+                        <label class="ezy-tax-list-radio-option" for="don-no">No</label>
+                    </div>
+                </li>
+                <li style="margin-bottom: 20px;margin-left: 30px;">
+                    <div style="margin-bottom: 10px;">
+                        <label class="ezy-tax-list-question">Was tax already deducted from your income (TDS)?</label>
+                    </div>
+                    <div style="margin-bottom: 5px;">
+                        <input class="ezy-tax-radio" type="radio" id="tds-yes" name="tds-yes">
+                        <label class="ezy-tax-list-radio-option" for="tds-yes">Yes</label>
+                    </div>
+                    <div style="margin-bottom: 5px;">
+                        <input class="ezy-tax-radio" type="radio" id="tds-no" name="tds-no">
+                        <label class="ezy-tax-list-radio-option" for="tds-no">No</label>
+                    </div>
+                </li>
+            </ol>
+               
+        </div>
+        <button class="ezy-tax-button" style="margin-top: 30px">Submit</button>
+    </div>
+    <!-- ================= FOOTER ================= -->
+    <div>
+        <footer class = "ezy-tax-footer">
+        <div style="display:flex; padding: 0px 50px 0px 50px;">
+            <img class="ezy-tax-symbol" src="assets/images/copyright-white.png" alt="copyright">
+                <span class="ezy-tax-footer-text">2026 EzyTax Solutions Inc.</span>
+                    <div style="margin-left:auto; display:flex;">
+                        <img class="ezy-tax-symbol" src="assets/images/mail-icon-white.png" alt="mail">
+                        <a class="ezy-tax-footer-text" style="padding-right:10px;" href="mailto:support@ezytax.com">support@ezytax.com</a>
+                        <img class="ezy-tax-symbol" src="assets/images/telephone-white.png" alt="phone">
+                        <a class="ezy-tax-footer-text" href="tel:+919999999999">+91 9999999999</a>
+                    </div>
+        </div>
+    </footer>
+    </div>
+
+</body>
+
+</html>
