@@ -1,0 +1,221 @@
+/* ===== BODY ===== */
+body {
+    margin: 0;
+    padding: 0;
+    background-color: #f5f5f5;
+    font-family: sans-serif;
+    overflow-x: hidden;
+}
+
+/* ===== MAIN CONTAINER ===== */
+.ca-dashboard-container {
+    width: 85%;
+    margin: auto;
+}
+
+/* ===== NAVBAR ===== */
+.ca-navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 50px;
+    margin-top: 20px;
+    background-color: white;
+    border-radius: 15px;
+    box-shadow: 0px 2px 10px rgba(0, 0, 0, 0.08);
+}
+.ezy-tax-logo {
+    width: 130px;
+    height: 130px;
+}
+.ca-nav-links {
+    display: flex;
+    gap: 35px;
+}
+.ca-nav-links a {
+    text-decoration: none;
+    color: rgb(71, 70, 70);
+    font-size: 18px;
+    font-weight: 600;
+    transition: 0.3s;
+}
+.ca-nav-links a:hover {
+    color: blueviolet;
+}
+
+/* ===== WELCOME SECTION ===== */
+.ca-welcome-card {
+    margin-top: 35px;
+    margin-bottom: 40px;
+    padding: 35px;
+    background-color: white;
+    border-radius: 15px;
+    box-shadow: 0px 2px 10px rgba(0, 0, 0, 0.08);
+}
+.ca-welcome h1 {
+    font-size: 48px;
+    margin-bottom: 15px;
+}
+.ca-welcome p {
+    color: rgb(71, 70, 70);
+    font-size: 20px;
+}
+
+/* ===== STATS SECTION ===== */
+.ca-stats-container {
+    display: flex;
+    gap: 25px;
+    margin-bottom: 50px;
+}
+
+.ca-card {
+    flex: 1;
+    padding: 30px;
+    text-align: center;
+    background-color: white;
+    border-radius: 15px;
+    box-shadow: 0px 2px 10px rgba(0, 0, 0, 0.08);
+
+    transition: 0.3s;
+}
+.ca-card:hover {
+    transform: translateY(-5px);
+}
+.ca-card h2 {
+    color: blueviolet;
+    font-size: 42px;
+    margin-bottom: 10px;
+}
+.ca-card p {
+    color: rgb(71, 70, 70);
+    font-size: 18px;
+}
+
+/* ===== COMMON SECTION ===== */
+.ca-section {
+    margin-bottom: 40px;
+}
+.ca-section-box {
+    padding: 30px;
+    background-color: white;
+    border-radius: 15px;
+    box-shadow: 0px 2px 10px rgba(0, 0, 0, 0.08);
+}
+.ca-section-title {
+    font-size: 34px;
+    margin-bottom: 25px;
+}
+
+/* ===== APPOINTMENT TABLE ===== */
+.ca-dashboard-table {
+    width: 100%;
+    margin-top: 20px;
+    border-collapse: collapse;
+}
+.ca-dashboard-table th {
+    padding: 15px;
+    text-align: center;
+    background-color: blueviolet;
+    color: white;
+}
+.ca-dashboard-table td {
+    padding: 16px;
+    text-align: center;
+    border-bottom: 1px solid #ddd;
+}
+.ca-dashboard-table tr:hover {
+    background-color: #f8f3ff;
+}
+
+/* ===== TASK SECTION ===== */
+.ca-task-container {
+    margin-top: 25px;
+}
+.ca-task-card {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px;
+    margin-bottom: 18px;
+    background-color: #f8f3ff;
+    border-radius: 12px;
+}
+.ca-task-card h3 {
+    margin-bottom: 5px;
+}
+.ca-task-card p {
+    color: gray;
+}
+
+/* ===== TASK STATUS ===== */
+.pending-status,
+.review-status,
+.urgent-status {
+    padding: 8px 16px;
+    border-radius: 20px;
+    color: white;
+    font-size: 14px;
+    font-weight: bold;
+}
+.pending-status {
+    background-color: orange;
+}
+.review-status {
+    background-color: blueviolet;
+}
+.urgent-status {
+    background-color: red;
+}
+
+/* ===== TASK LIST ===== */
+.ca-task-list {
+    padding-left: 25px;
+    color: rgb(71, 70, 70);
+    font-size: 18px;
+}
+.ca-task-list li {
+    margin-bottom: 18px;
+}
+
+/* ===== BUTTONS ===== */
+.ca-action-buttons {
+    margin-top: 30px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: auto;
+}
+.ca-dashboard-btn {
+    padding: 14px 24px;
+    margin-right: 15px;
+    border: none;
+    border-radius: 10px;
+    background-color: blueviolet;
+    color: white;
+    font-size: 16px;
+    font-weight: 600;
+    cursor: pointer;
+    transition: 0.3s;
+}
+.ca-dashboard-btn:hover {
+    background-color: rgb(118, 43, 188);
+}
+
+/* ===== FOOTER ===== */
+
+.ezy-tax-footer{
+    background-color: blueviolet;
+    padding: 20px 0;
+}
+
+.ezy-tax-footer-text{
+    color: white;
+    text-decoration: none;
+    font-size: 16px;
+}
+
+.ezy-tax-symbol{
+    width: 20px;
+    height: 20px;
+    margin-right: 8px;
+}

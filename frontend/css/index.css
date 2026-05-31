@@ -1,0 +1,274 @@
+/* ===== BODY ===== */
+body{
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
+    background-color: #f8f8f8;
+    overflow-x: hidden;
+}
+
+/* ===== COMMON ===== */
+.ezy-tax-heading-one{
+    font-size: 48px;
+    font-weight: bold;
+    color: black;
+}
+.ezy-tax-heading-two{
+    font-size: 24px;
+    font-weight: bold;
+    color: black;
+}
+.ezy-tax-form-text{
+    font-size: 20px;
+    color: rgb(70,70,70);
+    line-height: 1.6;
+}
+.ezy-tax-form-border{
+    border-radius: 18px;
+}
+
+/* ===== NAVBAR ===== */
+.navbar{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    border-radius: 18px;
+    padding: 18px 40px;
+    width: 85%;
+    margin: 20px auto;
+    background-color: white;
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+    box-shadow: 0px 2px 10px rgba(0,0,0,0.08);
+}
+.ezy-tax-logo{
+    width: 120px;
+}
+.nav-links{
+    display: flex;
+    align-items: center;
+    gap: 30px;
+
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+.nav-links a{
+    text-decoration: none;
+    color: blueviolet !important;
+    font-size: 18px;
+    font-weight: 600;
+}
+.nav-links a:hover{
+    color: blueviolet;
+    text-decoration: underline;
+}
+.navbar-login-link{
+    color: blueviolet !important;
+    font-size: 20px;
+    font-weight: 700;
+    font-family: sans-serif;
+}
+/* Dropdown menu for navbar (show on hover) */
+.nav-links li.dropdown{ position: relative; }
+.nav-links .dropdown-menu{
+    display: none;
+    position: absolute;
+    top: 100%;
+    left: 0;
+    background: white;
+    min-width: 200px;
+    box-shadow: 0 6px 18px rgba(0,0,0,0.08);
+    border-radius: 8px;
+    padding: 8px 0;
+    z-index: 1100;
+}
+.nav-links .dropdown-menu li{ 
+    list-style: none; 
+}
+.nav-links .dropdown-menu li a{
+    display: block;
+    padding: 8px 16px;
+    color: rgb(71,70,70);
+    text-decoration: none;
+    font-family: sans-serif;
+}
+.nav-links .dropdown-menu li a:hover{
+    background: #f5f5f5;
+    color: blueviolet;
+}
+.nav-links li.dropdown:hover > .dropdown-menu{ 
+    display: block; 
+}
+.navbar-btn{
+    width: 140px;
+    height: 45px;
+    margin: 0;
+}
+
+/* ===== HERO SECTION ===== */
+.hero{
+    width: 85%;
+    margin: 50px auto;
+
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 60px;
+}
+.hero-left{
+    flex: 1;
+}
+.hero-right{
+    flex: 1;
+    display:flex;
+    justify-content: center;
+    align-items: center;
+}
+.hero-image{
+    width: 100%;
+    max-width: 420px;
+    height: auto;
+    display: block;
+}
+.hero-buttons{
+    margin-top: 30px;
+
+    display: flex;
+    gap: 20px;
+}
+
+/* ===== BUTTONS ===== */
+.ezy-tax-button{
+    background: linear-gradient(to right, blueviolet, #a855f7);
+    color: white;
+    border: none;
+    border-radius: 10px;
+    padding: 15px 30px;
+    font-size: 18px;
+    font-weight: bold;
+    cursor: pointer;
+    transition: 0.3s;
+}
+.ezy-tax-button:hover{
+    transform: translateY(-3px);
+}
+.secondary-btn{
+    background: transparent;
+    border: 2px solid blueviolet;
+    color: blueviolet;
+}
+
+/* ===== SERVICES ===== */
+.services{
+    width: 85%;
+    margin: 80px auto;
+    text-align: center;
+}
+.service-container{
+    margin-top: 50px;
+    display: grid;
+    grid-template-columns: repeat(4,1fr);
+    gap: 25px;
+}
+.service-card{
+    background-color: white;
+    padding: 30px 20px;
+    border-radius: 18px;
+    box-shadow: 0px 2px 10px rgba(0,0,0,0.08);
+    transition: 0.3s;
+}
+.service-card:hover{
+    transform: translateY(-5px);
+}
+
+/* ===== CA SECTION ===== */
+.ca-section{
+    width: 85%;
+    margin: 80px auto;
+    text-align: center;
+}
+.ca-container{
+    margin-top: 50px;
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    gap: 30px;
+}
+.ca-card{
+    background-color: white;
+    padding: 30px;
+    border-radius: 18px;
+    box-shadow: 0px 2px 10px rgba(0,0,0,0.08);
+    transition: 0.3s;
+}
+.ca-card:hover{
+    transform: translateY(-5px);
+}
+.ca-specialization{
+    color: gray;
+    margin-bottom: 20px;
+}
+.ca-card-details p{
+    margin: 8px 0;
+    color: rgb(70,70,70);
+}
+.ca-card-footer{
+    margin-top: 25px;
+
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.ca-price{
+    color: blueviolet;
+}
+.talk-btn{
+    background-color: blueviolet;
+    color: white;
+    border: none;
+    border-radius: 8px;
+    padding: 12px 20px;
+    font-weight: bold;
+    cursor: pointer;
+}
+.load-more{
+    text-decoration: none;
+    color: blueviolet;
+    font-size: 18px;
+    font-weight: bold;
+    text-align: center;
+}
+
+.load-more-container{
+    margin-top: 40px;
+    display: flex;
+    justify-content: center;
+}
+
+/* ===== CTA ===== */
+.cta{
+    width: 85%;
+    margin: 80px auto;
+    background-color: white;
+    padding: 60px 30px;
+    text-align: center;
+    border-radius: 18px;
+    box-shadow: 0px 2px 10px rgba(0,0,0,0.08);
+}
+
+/* ===== FOOTER ===== */
+.ezy-tax-footer{
+    background-color: blueviolet;
+    padding: 20px 0;
+}
+.ezy-tax-footer-text{
+    color: white;
+    text-decoration: none;
+    font-size: 16px;
+}
+.ezy-tax-symbol{
+    width: 20px;
+    height: 20px;
+    margin-right: 8px;
+}
