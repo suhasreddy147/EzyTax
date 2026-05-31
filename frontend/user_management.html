@@ -1,0 +1,203 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>User Management - EzyTax</title>
+    <link rel="stylesheet" href="css/index.css">
+    <!-- Optional Bootstrap for layout and table styles -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+</head>
+
+<body>
+
+    <!-- ================= NAVBAR ================= -->
+
+    <header class="navbar">
+
+        <img src="assets/images/logo.png" alt="EzyTax Logo" class="ezy-tax-logo">
+
+        <nav>
+            <ul class="nav-links">
+
+                <li><a href="#">Home</a></li>
+                <li><a href="caList.html">Consult Experts</a></li>
+                <li class="dropdown">
+                    <a href="#">Dashboards ▾</a>
+                    <ul class="dropdown-menu">
+                        <li><a href="admin_dashboard.html">Admin Dashboard</a></li>
+                        <li><a href="user_dashboard.html">User Dashboard</a></li>
+                        <li><a href="caIndex.html">CA Dashboard</a></li>
+                    </ul>
+                </li>
+                <li class="dropdown">
+                    <a href="#">Services ▾</a>
+                    <ul class="dropdown-menu">
+                        <li><a href="#">Income Tax Filing</a></li>
+                        <li><a href="#">GST Registration</a></li>
+                        <li><a href="#">Business Setup</a></li>
+                        <li><a href="#">Tax Consultation</a></li>
+                    </ul>
+                </li>
+                <li><a href="user_management.html" class="navbar-login-link">User Management</a></li>
+                <li><a href="#">Profile</a></li>
+                <li><a href="index.html" class="navbar-login-link">Logout</a></li>
+            </ul>
+        </nav>
+        
+    </header>
+
+    <!-- ================= MAIN CONTENT ================= -->
+    <main class="container py-5">
+
+        <!-- Page Header -->
+        <div class="text-center mb-4">
+            <h1 class="ezy-tax-heading-one">User Management</h1>
+            <p class="ezy-tax-form-text">Manage users and CAs</p>
+        </div>
+
+        <!-- Global Search Bar (single) -->
+        <div class="d-flex flex-column flex-md-row align-items-center gap-2 justify-content-center mb-4">
+            <input type="text" class="form-control" placeholder="Search username or email...">
+            <button class="ezy-tax-button" style="width:auto;">Search</button>
+        </div>
+
+        <!-- ================= USERS SECTION ================= -->
+        <section class="ca-section">
+            <div class="card mb-4 shadow-sm rounded-4">
+                <div class="card-body">
+                    <div class="d-flex justify-content-between align-items-center mb-3">
+                        <h2 class="ezy-tax-heading-two mb-0">👥 Users</h2>
+                        <button class="ezy-tax-button" style="width:auto;">+ Add User</button>
+                    </div>
+                    <div class="table-responsive">
+                        <table class="table table-hover align-middle mb-0">
+                            <thead>
+                                <tr>
+                                    <th>Username</th>
+                                    <th>Email</th>
+                                    <th>Actions</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td>Rajesh Kumar</td>
+                                    <td>rajesh@example.com</td>
+                                    <td>
+                                        <button class="btn btn-outline-primary btn-sm me-1">View</button>
+                                        <button class="btn btn-outline-secondary btn-sm me-1">Edit</button>
+                                        <button class="btn btn-outline-danger btn-sm">Remove</button>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>Priya Singh</td>
+                                    <td>priya.singh@example.com</td>
+                                    <td>
+                                        <button class="btn btn-outline-primary btn-sm me-1">View</button>
+                                        <button class="btn btn-outline-secondary btn-sm me-1">Edit</button>
+                                        <button class="btn btn-outline-danger btn-sm">Remove</button>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>Amit Patel</td>
+                                    <td>amit.patel@example.com</td>
+                                    <td>
+                                        <button class="btn btn-outline-primary btn-sm me-1">View</button>
+                                        <button class="btn btn-outline-secondary btn-sm me-1">Edit</button>
+                                        <button class="btn btn-outline-danger btn-sm">Remove</button>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>Neha Sharma</td>
+                                    <td>neha.sharma@example.com</td>
+                                    <td>
+                                        <button class="btn btn-outline-primary btn-sm me-1">View</button>
+                                        <button class="btn btn-outline-secondary btn-sm me-1">Edit</button>
+                                        <button class="btn btn-outline-danger btn-sm">Remove</button>
+                                    </td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                </div>
+            </div>
+
+            <!-- ================= CA SECTION ================= -->
+            <div class="card shadow-sm rounded-4">
+                <div class="card-body">
+                    <div class="d-flex justify-content-between align-items-center mb-3">
+                        <h2 class="ezy-tax-heading-two mb-0">📋 Chartered Accountants (CA)</h2>
+                        <button class="ezy-tax-button" style="width:auto;">+ Add CA</button>
+                    </div>
+                    <div class="table-responsive">
+                        <table class="table table-hover align-middle mb-0">
+                            <thead>
+                                <tr>
+                                    <th>Name</th>
+                                    <th>Email</th>
+                                    <th>Actions</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td>Dr. Vikram Desai</td>
+                                    <td>vikram@caexperts.com</td>
+                                    <td>
+                                        <button class="btn btn-outline-primary btn-sm me-1">View</button>
+                                        <button class="btn btn-outline-secondary btn-sm me-1">Edit</button>
+                                        <button class="btn btn-outline-danger btn-sm">Remove</button>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>Ms. Anjali Verma</td>
+                                    <td>anjali@caexperts.com</td>
+                                    <td>
+                                        <button class="btn btn-outline-primary btn-sm me-1">View</button>
+                                        <button class="btn btn-outline-secondary btn-sm me-1">Edit</button>
+                                        <button class="btn btn-outline-danger btn-sm">Remove</button>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>Mr. Sanjay Gupta</td>
+                                    <td>sanjay@caexperts.com</td>
+                                    <td>
+                                        <button class="btn btn-outline-primary btn-sm me-1">View</button>
+                                        <button class="btn btn-outline-secondary btn-sm me-1">Edit</button>
+                                        <button class="btn btn-outline-danger btn-sm">Remove</button>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>Ms. Kavya Menon</td>
+                                    <td>kavya@caexperts.com</td>
+                                    <td>
+                                        <button class="btn btn-outline-primary btn-sm me-1">View</button>
+                                        <button class="btn btn-outline-secondary btn-sm me-1">Edit</button>
+                                        <button class="btn btn-outline-danger btn-sm">Remove</button>
+                                    </td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+    </main>
+
+    <!-- ================= FOOTER ================= -->
+    <footer class="ezy-tax-footer">
+        <div style="display:flex; padding: 0px 50px 0px 50px;">
+            <img class="ezy-tax-symbol" src="assets/images/copyright-white.png" alt="copyright">
+            <span class="ezy-tax-footer-text">2026 EzyTax Solutions Inc.</span>
+            <div style="margin-left:auto; display:flex;">
+                <img class="ezy-tax-symbol" src="assets/images/mail-icon-white.png" alt="mail">
+                <a class="ezy-tax-footer-text" style="padding-right:10px;" href="mailto:support@ezytax.com">support@ezytax.com</a>
+                <img class="ezy-tax-symbol" src="assets/images/telephone-white.png" alt="phone">
+                <a class="ezy-tax-footer-text" href="tel:+919999999999">+91 9999999999</a>
+            </div>
+        </div>
+    </footer>
+
+</body>
+
+</html>
