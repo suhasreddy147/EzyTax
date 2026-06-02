@@ -1,7 +1,6 @@
 body {
     margin: 0;
     font-family: Arial, sans-serif;
-    background: linear-gradient(to right, #3a0ca3, #cdb4f5);
     height: 100vh;
 }
 .ezy-tax-logo{
@@ -61,29 +60,29 @@ body {
 }
 
 .container {
-      display: flex;
     min-height: calc(100vh - 80px);
 }
 
-.left-panel {
-    flex: 1;
-    display: flex;
-    flex-direction: column;
+.top-panel {
+    margin-bottom:0px;
     justify-content: center;
     align-items: center;
     
 }
-.left-panel h1, p{
+.top-panel h1, p{
     text-align: center;
     font-size: 50px;
-    color: black;
+    color:linear-gradient(to right, #6a11cb, #2575fc);
     background-blend-mode: overlay;
 }
 .right-panel {
-    flex: 1;
+    margin-left: 500px;
+    margin-top: 10px;
     padding: 40px;
     overflow-y: auto;
     justify-content: center;
+    width: 500px;
+    align-content: center;
 }
 
 
