@@ -1,87 +1,80 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>CA Register</title>
-    <link rel="stylesheet" href="css/caRegister.css">
+    <link rel="stylesheet" href="css/ca-register.css">
 </head>
+
 <body>
-    <header class="navbar">
 
-        <img src="assets/images/logo.png"
-             alt="EzyTax Logo"
-             class="ezy-tax-logo">
+    <div class="container">
+            <a href="index.html">← Back to Home</a>
+        <div class="panel">
 
-        <nav>
-            <ul class="nav-links">
+            <img src="assets/images/logo.png" alt="EzyTax Logo" class="register-logo">
 
-                <li><a href="#">Home</a></li>
-                <li><a href="">About Us</a></li>
-                <li><a href="">Dash Board</a></li>
-                <li><a href="caIndex.html">Profile</a></li>
-   <li><a href="consult_experts.html">Contact Us</a></li>
-                <li>
-                    <a href="login.html" class="navbar-login-link">
-                    Login/signup
-                    </a>
-                </li>
-            </ul>
-        </nav>
+            <h2>
+                Register as CA to join with EzyTax !
+            </h2>
 
-    </header>
+            <form action="#" method="post" enctype="multipart/form-data">
 
+                <div class="form-section">
+                    <h3>Personal Details</h3>
+                    <input type="text" name="name" placeholder="Full Name" required>
+                    <input type="email" name="email" placeholder="Email" required>
+                    <input type="text" name="phone" placeholder="Phone Number" required>
+                </div>
 
-<div class="container">
+                <div class="form-section">
+                    <h3>Set Password</h3>
+                    <input type="password" name="password" placeholder="Password" required>
+                    <input type="password" name="confirmPassword" placeholder="Confirm Password" required>
+                </div>
 
-   <div class="left-panel">
-    <img src="C:\Users\vedas\OneDrive\Desktop\F_End Project\EzyTax\frontend\assets\images\logo.png" 
-    class="logo" alt="Logo" height="200 px" width="200px">
+                <div class="form-section">
+                    <h3>Professional Details</h3>
+                    <input type="number" name="experience" placeholder="Years of Experience" required>
+                    <input type="text" name="job_role" placeholder="Job Role" required>
+                    <input type="text" name="degree" placeholder="Highest Degree" required>
+                </div>
 
-    <h1 >Welcome!</h1>
-    <p style="font-size: 30px;">Create your account and start your journey with us.</p>
+                <div class="form-section">
+                    <h3>Documents</h3>
 
-</div>
+                    <label for="resume">Upload Resume</label>
+                    <input type="file" id="resume" name="resume" required>
 
-    <div class="right-panel">
-        <h2 style="font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', 
-        sans-serif; font-size: 50px;">Register CA</h2>
-            <div class="form-section">
-                <h3>Personal Details</h3>
-                <input type="text" name="name" placeholder="Full Name" required>
-                <input type="text" name="email" placeholder="Email" required>
-                <input type="text" name="phone" placeholder="Phone Number" required>
-            </div>
+                    <label for="identity_proof">Proof of Identity</label>
+                    <input type="file" id="identity_proof" name="identity_proof" required>
+                </div>
 
-            <div class="form-section">
-                <h3>Security</h3>
-                <input type="password" name="password" placeholder="Password" required>
-                <input type="password" name="confirmPassword" placeholder="Confirm Password" required>
-            </div>
+                <button type="submit">Register</button>
 
-            <div class="form-section">
-                <h3>Professional Details</h3>
-                <input type="number" name="experience" placeholder="Years of Experience" required>
-                <input type="text" name="job_role" placeholder="Job Role" required>
-                <input type="text" name="degree" placeholder="Highest Degree" required>
-            </div>
+            </form>
 
-            <div class="form-section">
-                <h3>Documents</h3>
-                <label>Upload Resume</label>
-                <input type="file" name="resume" required>
+            <a href="login.html">Already have an account? Login</a>
 
-                <label>Proof of Identity</label>
-                <input type="file" name="identity_proof" required>
-            </div>
+        </div>
 
-            <button type="submit">Register</button>
-
-        </form>
-
-        <a href="login.html">Already have an account? Login</a>
     </div>
-
-</div>
+    <!-- ================= FOOTER ================= -->
+    <footer class="ezy-tax-footer">
+        <div style="display:flex; padding: 0px 50px 0px 50px;">
+            <img class="ezy-tax-symbol" src="assets/images/copyright-white.png" alt="copyright">
+            <span class="ezy-tax-footer-text">2026 EzyTax Solutions Inc.</span>
+            <div style="margin-left:auto; display:flex;">
+                <img class="ezy-tax-symbol" src="assets/images/mail-icon-white.png" alt="mail">
+                <a class="ezy-tax-footer-text" style="padding-right:10px;"
+                    href="mailto:support@ezytax.com">support@ezytax.com</a>
+                <img class="ezy-tax-symbol" src="assets/images/telephone-white.png" alt="phone">
+                <a class="ezy-tax-footer-text" href="tel:+919999999999">+91 9999999999</a>
+            </div>
+        </div>
+    </footer>
 </body>
+
 </html>
