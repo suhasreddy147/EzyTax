@@ -3,10 +3,12 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-
     <title>EzyTax</title>
 
     <link rel="stylesheet" href="css/index.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="css/adminDash.css">
+    
 </head>
 
 <body>
@@ -14,288 +16,322 @@
     <!-- ================= NAVBAR ================= -->
 
     <header class="navbar">
-
         <img src="assets/images/logo.png" alt="EzyTax Logo" class="ezy-tax-logo">
 
         <nav>
             <ul class="nav-links">
-
-                <li><a href="#">Home</a></li>
-                <li><a href="caList.html">Consult Experts</a></li>
-                <li class="dropdown">
-                    <a href="#">Dashboards ▾</a>
-                    <ul class="dropdown-menu">
-                        <li><a href="admin_dashboard.html">Admin Dashboard</a></li>
-                        <li><a href="user_dashboard.html">User Dashboard</a></li>
-                        <li><a href="caIndex.html">CA Dashboard</a></li>
-                    </ul>
-                </li>
-                <li class="dropdown">
-                    <a href="#">Services ▾</a>
-                    <ul class="dropdown-menu">
-                        <li><a href="#">Income Tax Filing</a></li>
-                        <li><a href="#">GST Registration</a></li>
-                        <li><a href="#">Business Setup</a></li>
-                        <li><a href="#">Tax Consultation</a></li>
-                    </ul>
-                </li>
-                <li><a href="user_management.html" class="navbar-login-link">User Management</a></li>
-                <li><a href="#">Profile</a></li>
-                <li><a href="index.html" class="navbar-login-link">Logout</a></li>
+                <li><a href="admin_dashboard.html">Dashboard</a></li>
+                <li><a href="admin_accounts.html">Accounts</a></li>
+                <li><a href="admin_consultations.html">Consultations</a></li>
+                <li><a href="admin_transactions.html">Transactions</a></li>
+                <li><a href="admin_complaints.html">Complaints</a></li>
+                <li><a href="admin_settings.html">Settings</a></li>
             </ul>
         </nav>
-
     </header>
 
-
-    </header>
-
-    <!-- ================= HERO SECTION ================= -->
+    <!-- ================= DASHBOARD ================= -->
 
     <section class="hero">
+        <div class="container">
 
-        <!-- Left Side -->
-        <div class="hero-left">
+            <h1 class="mb-4">Admin Dashboard</h1>
 
-            <h1>Welcome, Admin!</h1>
+            <div class="row g-4">
 
-            <h1 class="ezy-tax-heading-one">
-                Get Tax Solutions Instantly
-            </h1>
+                <div class="col-6 col-md-3">
+                    <div class="dashboard-card">
+                        <h2>Total Users</h2>
+                        <p>234</p>
+                    </div>
+                </div>
 
-            <p class="ezy-tax-form-text">
-                Get expert help with Income Tax, GST,
-                Business Registration, and Financial Planning
-                anytime from EzyTax.
-            </p>
+                <div class="col-6 col-md-3">
+                    <div class="dashboard-card">
+                        <h2>Total CAs</h2>
+                        <p>37</p>
+                    </div>
+                </div>
 
-            <div class="hero-buttons">
+                <div class="col-6 col-md-3">
+                    <div class="dashboard-card">
+                        <h2>Pending Verifications</h2>
+                        <p>9</p>
+                    </div>
+                </div>
 
-                <a href="caList.html">
-                    <button class="ezy-tax-button">
-                        Consult Now
-                    </button>
+                <div class="col-6 col-md-3">
+                    <div class="dashboard-card">
+                        <h2>Active Consultations</h2>
+                        <p>27</p>
+                    </div>
+                </div>
 
-                    <button class="ezy-tax-button secondary-btn">
-                        File ITR
-                    </button>
-                </a>
+                <div class="col-6 col-md-3">
+                    <div class="dashboard-card">
+                        <h2>Today's Revenue</h2>
+                        <p>₹13,455</p>
+                    </div>
+                </div>
+
+                <div class="col-6 col-md-3">
+                    <div class="dashboard-card">
+                        <h2>Monthly Revenue</h2>
+                        <p>₹3,98,502</p>
+                    </div>
+                </div>
+
+                <div class="col-6 col-md-3">
+                    <div class="dashboard-card">
+                        <h2>Platform Commission</h2>
+                        <p>₹69,625</p>
+                    </div>
+                </div>
+
+                <div class="col-6 col-md-3">
+                    <div class="dashboard-card">
+                        <h2>Open Complaints</h2>
+                        <p>12</p>
+                    </div>
+                </div>
+
+            </div>
+
+            <div class="row g-4 mt-3">
+
+                <div class="col-lg-6">
+                    <div class="dashboard-card">
+                        <h2>Monthly Revenue</h2>
+                        <img src="assets/images/sampleChart.png" class="chart-img" alt="Revenue Chart">
+                    </div>
+                </div>
+
+                <div class="col-lg-6">
+                    <div class="dashboard-card">
+                        <h2>User Growth</h2>
+                        <img src="assets/images/sampleChart.png" class="chart-img" alt="User Growth Chart">
+                    </div>
+                </div>
+
+            </div>
+
+            <div class="row g-4 mt-3">
+
+                <div class="col-lg-6">
+                    <div class="dashboard-card">
+
+                        <h2 class="mb-4">Recent Registrations</h2>
+
+                        <div class="table-responsive">
+                            <table class="table table-hover" style="min-width: 400px;">
+
+                                <thead>
+                                    <tr>
+                                        <th>Name</th>
+                                        <th>Type</th>
+                                        <th>Date</th>
+                                    </tr>
+                                </thead>
+
+                                <tbody>
+                                    <tr>
+                                        <td>Rahul</td>
+                                        <td>User</td>
+                                        <td>Today</td>
+                                    </tr>
+
+                                    <tr>
+                                        <td>Priya</td>
+                                        <td>CA</td>
+                                        <td>Today</td>
+                                    </tr>
+
+                                    <tr>
+                                        <td>Arjun</td>
+                                        <td>User</td>
+                                        <td>Yesterday</td>
+                                    </tr>
+
+                                    <tr>
+                                        <td>Sneha</td>
+                                        <td>CA</td>
+                                        <td>Yesterday</td>
+                                    </tr>
+                                </tbody>
+
+                            </table>
+                        </div>
+
+                    </div>
+                </div>
+
+                <div class="col-lg-6">
+                    <div class="dashboard-card">
+
+                        <h2 class="mb-4">Recent Transactions</h2>
+
+                        <div class="table-responsive">
+                            <table class="table table-hover" style="min-width: 400px;">
+
+                                <thead>
+                                    <tr>
+                                        <th>ID</th>
+                                        <th>Amount</th>
+                                        <th>Status</th>
+                                    </tr>
+                                </thead>
+
+                                <tbody>
+
+                                    <tr>
+                                        <td>#1001</td>
+                                        <td>₹499</td>
+                                        <td>
+                                            <span class="badge badge-completed">
+                                                Completed
+                                            </span>
+                                        </td>
+                                    </tr>
+
+                                    <tr>
+                                        <td>#1002</td>
+                                        <td>₹299</td>
+                                        <td>
+                                            <span class="badge badge-pending">
+                                                Pending
+                                            </span>
+                                        </td>
+                                    </tr>
+
+                                    <tr>
+                                        <td>#1003</td>
+                                        <td>₹799</td>
+                                        <td>
+                                            <span class="badge badge-completed">
+                                                Completed
+                                            </span>
+                                        </td>
+                                    </tr>
+
+                                    <tr>
+                                        <td>#1004</td>
+                                        <td>₹199</td>
+                                        <td>
+                                            <span class="badge badge-failed">
+                                                Failed
+                                            </span>
+                                        </td>
+                                    </tr>
+
+                                </tbody>
+
+                            </table>
+                        </div>
+
+                    </div>
+                </div>
+
+            </div>
+
+            <div class="row mt-4">
+
+                <div class="col-12">
+                    <div class="dashboard-card">
+
+                        <h2 class="mb-4">Pending CA Verifications</h2>
+
+                        <div class="table-responsive">
+
+                            <table class="table table-hover" style="min-width: 600px;">
+
+                                <thead>
+                                    <tr>
+                                        <th>Name</th>
+                                        <th>Specialization</th>
+                                        <th>Experience</th>
+                                        <th>Status</th>
+                                    </tr>
+                                </thead>
+
+                                <tbody>
+
+                                    <tr>
+                                        <td>Ramesh Kumar</td>
+                                        <td>GST</td>
+                                        <td>5 Years</td>
+                                        <td>
+                                            <span class="badge badge-pending">
+                                                Pending
+                                            </span>
+                                        </td>
+                                    </tr>
+
+                                    <tr>
+                                        <td>Anita Sharma</td>
+                                        <td>Income Tax</td>
+                                        <td>8 Years</td>
+                                        <td>
+                                            <span class="badge badge-pending">
+                                                Pending
+                                            </span>
+                                        </td>
+                                    </tr>
+
+                                    <tr>
+                                        <td>Vikas Jain</td>
+                                        <td>Audit</td>
+                                        <td>3 Years</td>
+                                        <td>
+                                            <span class="badge badge-pending">
+                                                Pending
+                                            </span>
+                                        </td>
+                                    </tr>
+
+                                </tbody>
+
+                            </table>
+
+                        </div>
+
+                    </div>
+                </div>
+
             </div>
 
         </div>
-
-        <!-- Right Side pic j-->
-        <div class="hero-right">
-
-            <img src="assets/images/hero-tax.png" alt="Tax Consultation" class="hero-image">
-
-        </div>
-
-    </section>
-
-    <!-- ================= SERVICES SECTION ================= -->
-
-    <section class="services">
-
-        <h2 class="ezy-tax-heading-one">
-            Our Services
-        </h2>
-
-        <div class="service-container">
-
-            <!-- Card 1 -->
-            <div class="service-card ezy-tax-form-border">
-
-                <h3 class="ezy-tax-heading-two">
-                    Income Tax Filing
-                </h3>
-
-                <p class="ezy-tax-form-text">
-                    File your ITR quickly and easily with expert support.
-                </p>
-
-            </div>
-
-            <!-- Card 2 -->
-            <div class="service-card ezy-tax-form-border">
-
-                <h3 class="ezy-tax-heading-two">
-                    GST Registration
-                </h3>
-
-                <p class="ezy-tax-form-text">
-                    Complete GST registration and filing services.
-                </p>
-
-            </div>
-
-            <!-- Card 3 -->
-            <div class="service-card ezy-tax-form-border">
-
-                <h3 class="ezy-tax-heading-two">
-                    Business Setup
-                </h3>
-
-                <p class="ezy-tax-form-text">
-                    Start your startup or company with ease.
-                </p>
-
-            </div>
-
-            <!-- Card 4 -->
-            <div class="service-card ezy-tax-form-border">
-
-                <h3 class="ezy-tax-heading-two">
-                    Tax Consultation
-                </h3>
-
-                <p class="ezy-tax-form-text">
-                    Connect instantly with tax experts online.
-                </p>
-
-            </div>
-
-        </div>
-
-    </section>
-
-    <!-- ================= EXPERT SECTION ================= -->
-
-    <section class="ca-section">
-
-        <h2 class="ezy-tax-heading-one">
-            Top Tax Experts
-        </h2>
-
-        <div class="ca-container">
-
-            <!-- Expert Card 1 -->
-            <div class="ca-card">
-                <img src="assets/images/ca-male.png" alt="Dummy Expert 1" class="ezy-tax-logo">
-                <h3 class="ezy-tax-heading-two">
-                    Dummy CA 1
-                </h3>
-                <p class="ca-specialization">
-                    GST • Tax • Business Filing
-                </p>
-                <div class="ca-card-details">
-                    <p>⭐ 4.9 Rating</p>
-                    <p>12+ Years Experience</p>
-                    <p>English • Hindi</p>
-                </div>
-                <div class="ca-card-footer">
-                    <h3 class="ca-price">
-                        ₹25/min
-                    </h3>
-                    <a href="signup.html">
-                        <button class="talk-btn">
-                            Consult Now
-                        </button>
-                    </a>
-                </div>
-            </div>
-
-
-            <!-- Expert Card 1 -->
-            <div class="ca-card">
-                <img src="assets/images/ca-male.png" alt="Dummy Expert 1" class="ezy-tax-logo">
-                <h3 class="ezy-tax-heading-two">
-                    Dummy CA 2
-                </h3>
-                <p class="ca-specialization">
-                    GST • Business Filing
-                </p>
-                <div class="ca-card-details">
-                    <p>⭐ 4.8 Rating</p>
-                    <p>9+ Years Experience</p>
-                    <p>English • Hindi • Tamil </p>
-                </div>
-                <div class="ca-card-footer">
-                    <h3 class="ca-price">
-                        ₹35/min
-                    </h3>
-                    <a href="signup.html">
-                        <button class="talk-btn">
-                            Consult Now
-                        </button>
-                    </a>
-                </div>
-            </div>
-
-
-            <!-- Expert Card 1 -->
-            <div class="ca-card">
-                <img src="assets/images/ca-female.png" alt="Dummy Expert 1" class="ezy-tax-logo">
-                <h3 class="ezy-tax-heading-two">
-                    Dummy CA 3
-                </h3>
-                <p class="ca-specialization">
-                    Professionl Tax • Business Tax
-                </p>
-                <div class="ca-card-details">
-                    <p>⭐ 4.7 Rating</p>
-                    <p>7+ Years Experience</p>
-                    <p>English • Bengali</p>
-                </div>
-                <div class="ca-card-footer">
-                    <h3 class="ca-price">
-                        ₹25/min
-                    </h3>
-                    <a href="signup.html">
-                        <button class="talk-btn">
-                            Consult Now
-                        </button>
-                    </a>
-                </div>
-            </div>
-        </div>
-
-        <div class="load-more-container">
-            <a href="caList.html" class="load-more"> Load More </a>
-        </div>
-
-    </section>
-
-    <!-- ================= CTA SECTION ================= -->
-
-    <section class="cta ezy-tax-form-border">
-
-        <h2 class="ezy-tax-heading-one">
-            Don't Know Anything About Taxes?
-        </h2>
-
-        <p class="ezy-tax-form-text">
-            Know more about taxes
-        </p>
-
-
-        <a href="taxRegime.html">
-
-            <button class="ezy-tax-button">
-                Get info
-            </button>
-
-        </a>
-
-
-
     </section>
 
     <!-- ================= FOOTER ================= -->
 
     <footer class="ezy-tax-footer">
-        <div style="display:flex; padding: 0px 50px 0px 50px;">
+        <div style="display:flex; padding:0 50px;">
             <img class="ezy-tax-symbol" src="assets/images/copyright-white.png" alt="copyright">
             <span class="ezy-tax-footer-text">2026 EzyTax Solutions Inc.</span>
+
             <div style="margin-left:auto; display:flex;">
                 <img class="ezy-tax-symbol" src="assets/images/mail-icon-white.png" alt="mail">
-                <a class="ezy-tax-footer-text" style="padding-right:10px;"
-                    href="mailto:support@ezytax.com">support@ezytax.com</a>
-                <img class="ezy-tax-symbol" src="assets/images/telephone-white.png" alt="phone">
-                <a class="ezy-tax-footer-text" href="tel:+919999999999">+91 9999999999</a>
+
+                <a class="ezy-tax-footer-text"
+                   style="padding-right:10px;"
+                   href="mailto:support@ezytax.com">
+                    support@ezytax.com
+                </a>
+
+                <img class="ezy-tax-symbol"
+                     src="assets/images/telephone-white.png"
+                     alt="phone">
+
+                <a class="ezy-tax-footer-text"
+                   href="tel:+919999999999">
+                    +91 9999999999
+                </a>
             </div>
         </div>
     </footer>
 
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"></script>
+
 </body>
 </html>
+```

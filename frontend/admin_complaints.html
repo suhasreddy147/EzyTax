@@ -1,0 +1,174 @@
+<!DOCTYPE html>
+<html lang=en>
+    <head>
+        <meta charset-UTF-8>
+        <meta name=viewport content="width=device-width, initial-scale=1.0">
+        <title>Admin Dashboard</title>
+
+        <link rel="stylesheet" href="css/index.css">
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet">
+        <link rel="stylesheet" href="css/adminDash.css">
+    </head>
+
+    <body>
+
+        <header class="navbar">
+            <img src="assets/images/logo.png" alt="EzyTax Logo" class="ezy-tax-logo">
+
+            <nav>
+                <ul class="nav-links">
+                    <li><a href="admin_dashboard.html">Dashboard</a></li>
+                    <li><a href="admin_accounts.html">Accounts</a></li>
+                    <li><a href="admin_consultations.html">Consultations</a></li>
+                    <li><a href="admin_transactions.html">Transactions</a></li>
+                    <li><a href="admin_complaints.html">Complaints</a></li>
+                    <li><a href="admin_settings.html">Settings</a></li>
+                </ul>
+            </nav>
+        </header>
+
+        <section class="container-fluid mx-2 mt-4">
+            <h1 class="mb-4">Complaints Page</h1>
+            <div class="row g-4">
+                
+                <div class="col-6 col-md-3">
+                    <div class="dashboard-card">
+                        <h2>Open Complaints</h2>
+                        <p>24</p>
+                    </div>
+                </div>
+
+                <div class="col-6 col-md-3">
+                    <div class="dashboard-card">
+                        <h2>In Progress</h2>
+                        <p>8</p>
+                    </div>
+                </div>
+
+                <div class="col-6 col-md-3">
+                    <div class="dashboard-card">
+                        <h2>Resolved</h2>
+                        <p>56</p>
+                    </div>
+                </div>
+
+                <div class="col-6 col-md-3">
+                    <div class="dashboard-card">
+                        <h2>High Priority</h2>
+                        <p>3</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="table-container">
+            <h1 class="my-3">Complaints View</h1>
+            <div class="table-responsive">
+                <table class="table table-hover">
+                    <thead>
+                        <th>Complaint ID</th>
+                        <th>Raised by</th>
+                        <th>Against</th>
+                        <th>Type</th>
+                        <th>Date</th>
+                        <th>Priority</th>
+                        <th>Status</th>
+                    </thead>
+
+                    <tbody>
+                        <tr>
+                            <td>CMP1001</td>
+                            <td>Rahul</td>
+                            <td>Priya Sharma</td>
+                            <td>Consultation</td>
+                            <td>21 Jun 2026</td>
+                            <td><span class="badge bg-info">Medium</span></td>
+                            <td><span class="badge bg-success">Open</span></td>
+                        </tr>
+
+                        <tr>
+                            <td>CMP1002</td>
+                            <td>Neha</td>
+                            <td>Rohit Verma</td>
+                            <td>Payment</td>
+                            <td>19 Jun 2026</td>
+                            <td><span class="badge bg-danger">High</span></td>
+                            <td><span class="badge bg-warning">In Progress</span></td>
+                        </tr>
+
+                        <tr>
+                            <td>CMP1003</td>
+                            <td>Vikram</td>
+                            <td>Sunita Gupta</td>
+                            <td>Technical</td>
+                            <td>18 Jun 2026</td>
+                            <td><span class="badge bg-secondary">Low</span></td>
+                            <td><span class="badge bg-success">Resolved</span></td>
+                        </tr>
+
+                        <tr>
+                            <td>CMP1004</td>
+                            <td>Aisha</td>
+                            <td>Ravi Kumar</td>
+                            <td>Consultation</td>
+                            <td>17 Jun 2026</td>
+                            <td><span class="badge bg-info">Medium</span></td>
+                            <td><span class="badge bg-warning">In Progress</span></td>
+                        </tr>
+
+                        <tr>
+                            <td>CMP1005</td>
+                            <td>Manish</td>
+                            <td>Priya Sharma</td>
+                            <td>Payment</td>
+                            <td>16 Jun 2026</td>
+                            <td><span class="badge bg-danger">High</span></td>
+                            <td><span class="badge bg-success">Open</span></td>
+                        </tr>  
+
+                        <tr>
+                            <td>CMP1006</td>
+                            <td>Rohit</td>
+                            <td>Sunita Gupta</td>
+                            <td>Technical</td>
+                            <td>15 Jun 2026</td>
+                            <td><span class="badge bg-secondary">Low</span></td>
+                            <td><span class="badge bg-success">Resolved</span></td> 
+                        </tr>   
+                    </tbody>
+                </table>
+            </div>
+        </section>
+
+        <!-- ================= FOOTER ================= -->
+
+        <footer class="ezy-tax-footer">
+            <div style="display:flex; padding:0 50px;">
+                <img class="ezy-tax-symbol" src="assets/images/copyright-white.png" alt="copyright">
+                <span class="ezy-tax-footer-text">2026 EzyTax Solutions Inc.</span>
+
+                <div style="margin-left:auto; display:flex;">
+                    <img class="ezy-tax-symbol" src="assets/images/mail-icon-white.png" alt="mail">
+
+                    <a class="ezy-tax-footer-text"
+                       style="padding-right:10px;"
+                       href="mailto:support@ezytax.com">
+                        support@ezytax.com
+                    </a>
+
+                    <img class="ezy-tax-symbol"
+                         src="assets/images/telephone-white.png"
+                         alt="phone">
+
+                    <a class="ezy-tax-footer-text"
+                       href="tel:+919999999999">
+                        +91 9999999999
+                    </a>
+                </div>
+            </div>
+        </footer>
+
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"></script>
+
+    </body>
+</html>
